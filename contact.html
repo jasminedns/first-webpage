@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Animes</title>
+    <link rel="stylesheet" href="styles/navbar-footer.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/typography.css">
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <h2><a href="index.html" class="pageLogo-title">Animes</a></h2>
+            <ul class="menu-links">
+                <li ><a href="index.html" class="right-menu">Home</a></li>
+                <li><a href="travel-guide.html" class="right-menu">Travel Guide</a></li>
+                <li><a href="gallery.html" class="right-menu">Gallery</a></li>
+                <li class="navbar__location"><a href="contact.html" class="right-menu">Contact</a></li>
+            </ul>
+        </div>
+    </header>    
+    <section class="main">
+        <div class="form-description">
+            <h3>I'd love to hear from you!</h3>
+            <p>Please fill this form to contact me! I'll try to answer as soon as I can!</p>
+        </div>
+        <form action="mailto: jasmine.danese@edu.futuregames.se" method="post" class="user-form">
+            <img class="logo1" src="images/logos/airplane.png" alt="airplane logo" height="50px" width="50px">
+            <div class="user-form__name">
+                <label for="user-name">Name</label>
+                <input type="text" name="user-name" id="user-name" required>
+            </div>
+            <div class="user-form__email">
+                <label for="user-email">E-mail address</label>
+                <input type="text" name="user-email" id="user-email" required>
+            </div>
+            <div class="user-form__destination">
+                <label for="user-destination">Destination you'd like to know more about</label>
+                <input type="text" name="user-destination" id="user-destination">
+            </div>
+            <div class="user-form__checkbox">
+                <p>Is there something specific you’re curious about?</p>
+                <ul>
+                    <li><label for="user-object1">Accomodations</label>
+                    <input type="checkbox" name="user-object1" id="user-object1" value="accomodations"></li>
+                    <li><label for="user-object2">Flights</label>
+                    <input type="checkbox" name="user-object2" id="user-object2" value="flights"></li>
+                    <li><label for="user-object3">Documentation</label>
+                    <input type="checkbox" name="user-object3" id="user-object3" value="documentation"></li>
+                    <li><label for="user-object4">What to do</label>
+                    <input type="checkbox" name="user-object4" id="user-object4" value="what-to-do"></li>
+                    <li><label for="user-object5">None of the above</label>
+                    <input type="checkbox" name="user-object5" id="user-object5" value="none"></li>
+                </ul>
+            </div>
+            <div class="user-form__msg">
+                <label for="user-msg">Tell me if you'd like additional help or advice</label>
+                <textarea name="user-msg" id="user-msg" class="user-form__msg-box"></textarea>
+            </div>
+            <button class="user-form__submit">Submit</button>
+            <img class="logo2" alt="airplane logo" src="images/logos/airplane (1).png" height="50px" width="50px">
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="logos">
+            <a href="https://www.instagram.com/jasminedanese/" target="_blank"><img src="images/logos/instagram-logo-round.png" alt="instagram logo" class="logo1" height="35px" width="35px"></a>
+            <a href="https://github.com/jasminedns" target="_blank"><img src="images/logos/github logo.png" alt="github logo" class="logo2" height="35px" width="35px"></a>
+        </div>
+    </footer>
+</body>
+</html>

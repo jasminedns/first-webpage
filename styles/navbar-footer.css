@@ -1,0 +1,132 @@
+:root {
+    --bgLowOpacity: hsl(22, 31%, 76%, .2);
+    --bgMediumOpacity: hsl(22, 31%, 76%, .5);
+    --borderRadiusBase: 10px;
+    --borderStyle: #d5bdaf double 5px;
+    --mediumMargin: 16px;
+    --primaryBgColor: #d7cec7;
+    --secondaryBgColor: #f7f7f7;
+    --primaryTextColor: black;
+    --secondaryTextColor: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--primaryBgColor);
+    height: 100vh;
+}
+
+body {
+    background-color: var(--secondaryBgColor);
+    display: flex;
+    font-family: montserrat;
+    margin: 24px;
+    min-height: 100%;
+    flex-direction: column;
+}
+
+.header {
+    background-color: var(--secondaryBgColor);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+h2 {
+    font-size: 4rem;
+    font-family: qwitcher;
+    margin: 8px;
+    padding: 0 16px 8px 16px;
+}
+
+.pageLogo-title {
+    color: var(--primaryTextColor);
+    text-decoration: none;
+}
+
+.navbar {
+    border-bottom: var(--primaryBgColor) double 5px;
+    display: grid;
+    grid-template: 1fr / repeat(2, 50%);
+    
+}
+
+.navbar .menu-links {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    width: 100%;
+}
+
+.navbar li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.navbar__location {
+    font-weight: 700;
+    text-decoration: overline;
+}
+
+.right-menu {
+    color: var(--primaryTextColor);
+    font-size: 0.8rem;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.right-menu:hover {
+    font-weight: 700;
+    text-decoration: overline;
+    transition: font-weight 0.15s, text-decoration 0.15s;
+}
+
+section {
+    flex: 1;
+}
+
+.footer {
+    background-color: var(--primaryBgColor);
+    color: var(--secondaryTextColor);
+    display: flex;
+    padding: 16px;
+    padding-right: 0;
+    justify-content: end;
+    margin-top: var(--mediumMargin);
+}
+
+.logo2 {
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .header {
+        position: static;
+    }
+
+    .navbar {
+        display: grid;
+        grid-template: repeat(2, auto) / 1fr;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    ul {
+        border-top: var(--primaryBgColor) double 5px;
+        grid-area: 2 / 1 / 3 / 2;
+        margin: 0;
+        padding: 16px 0;
+    }
+}

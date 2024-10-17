@@ -1,0 +1,61 @@
+/* normal font */
+@font-face {
+    font-family: montserrat;
+    src: url(../fonts/monserrat/Montserrat-Regular.woff);
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(../fonts/monserrat/Montserrat-Regular.woff2);
+}
+/* italic */
+@font-face {
+    font-family: montserrat;
+    font-style: italic;
+    src: url(../fonts/monserrat/Montserrat-Italic.woff);
+}
+
+@font-face {
+    font-family: montserrat;
+    font-style: italic;
+    src: url(../fonts/monserrat/Montserrat-Italic.woff2);
+}
+/* bold 900 */
+@font-face {
+    font-family: montserrat;
+    font-weight: 900;
+    src: url(../fonts/monserrat/Montserrat-ExtraBold.woff);
+}
+
+@font-face {
+    font-family: montserrat;
+    font-weight: 900;
+    src: url(../fonts/monserrat/Montserrat-ExtraBold.woff2);
+}
+
+@font-face {
+    font-family: montserrat;
+    font-style: italic;
+    font-weight: 900;
+    src: url(../fonts/monserrat/Montserrat-ExtraBoldItalic.woff);
+}
+
+@font-face {
+    font-family: montserrat;
+    font-style: italic;
+    font-weight: 900;
+    src: url(../fonts/monserrat/Montserrat-ExtraBoldItalic.woff2);
+}
+
+
+@font-face {
+    font-family: qwitcher;
+    font-weight: 900;
+    src: url(../fonts/qwitcher/QwitcherGrypen-Bold.woff);
+}
+
+@font-face {
+    font-family: qwitcher;
+    font-weight: 900;
+    src: url(../fonts/qwitcher/QwitcherGrypen-Bold.woff2);
+}

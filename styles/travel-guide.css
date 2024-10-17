@@ -1,0 +1,167 @@
+.main-bgimage {
+    background-image: url(../images/travelGuide/airplane.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 530px;
+    position: relative;
+}
+
+.bgimage-text {
+    background-color: var(--bgMediumOpacity);
+    margin: 16px 150px;
+    padding: 32px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-55%);
+    text-align: center;
+}
+
+.empty-div {
+    border-top: var(--borderStyle);
+}
+
+h3 {
+    font-family: qwitcher;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.travel-grid {
+    display: grid;
+    gap: 16px;
+    grid-template: 1fr 3fr 1fr 3fr / repeat(3, 1fr);
+    grid-template-areas: 
+        "first second third"
+        "first-list second-list third-list"
+        "fourth fifth sixth"
+        "fourth-list fifth-list sixth-list";
+    margin: var(--mediumMargin);
+}
+
+.travel-grid h3 {
+    background-color: var(--bgMediumOpacity);
+    border-radius: var(--borderRadiusBase);
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+.grid-title-1 {
+    grid-area: first;
+}
+
+.grid-title-2 {
+    grid-area: second;
+}
+
+.grid-title-3 {
+    grid-area: third;
+}
+
+.grid-title-4 {
+    grid-area: fourth;
+}
+
+.grid-title-5 {
+    grid-area: fifth;
+}
+
+.grid-title-6 {
+    grid-area: sixth;
+}
+
+.list {
+    list-style-type: none;
+    margin: 8px;
+    padding: 8px;
+    text-align: center;
+}
+
+.list li {
+    margin-top: 8px;
+}
+
+.list span {
+    font-weight: 900;
+}
+
+.tips-list1 {
+    grid-area: first-list;
+}
+
+.tips-list2 {
+    grid-area: second-list;
+}
+
+.tips-list3 {
+    grid-area: third-list;
+}
+
+.tips-list4 {
+    grid-area: fourth-list;
+}
+
+.tips-list5 {
+    grid-area: fifth-list;
+}
+
+.tips-list6 {
+    grid-area: sixth-list;
+}
+
+.double-img {
+    display: grid;
+    grid-template-areas: 
+        "container1 container2";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    margin: 24px;
+}
+
+.container1, .container2 {
+    display: flex;
+    justify-content: center;
+}
+
+.container1 {
+    grid-area: container1;
+}
+
+.container2 {
+    grid-area: container2;
+}
+
+.img1, .img2 {
+    border-radius: var(--borderRadiusBase);
+    min-height: 100%;
+    width: 70%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15 );
+}
+
+@media screen and (max-width: 767px) {
+    .main-bgimage, .bgimage-text, .empty-div {
+        display: none;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .travel-grid {
+        display: grid;
+        gap: 8px;
+        grid-template: 1fr 5fr 1fr 5fr 1fr 5fr / repeat(2, 1fr);
+        grid-template-areas: 
+            "first second"
+            "first-list second-list "
+            "third fourth"
+            "third-list fourth-list"
+            "fifth sixth"
+            "fifth-list sixth-list";
+        margin: var(--mediumMargin);
+    }
+
+    .img1, .img2 {
+        width: 90%;
+    }
+}
